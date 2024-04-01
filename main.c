@@ -71,7 +71,7 @@ void printTime(double* T_c, double* T_asm, int j, double acc) {
 	aveDiff = ((asmAve - cAve) / (cAve)) * 100;
 	double absAve = abs(aveDiff);
 
-	printf("\nTime Difference: %.2f%% (%.2fms)", absAve, asmAve - cAve);
+	printf("\nTime Difference: %.2f%% (%.2fms)", absAve, cAve - asmAve);
 	if (aveDiff > 0) {
 		printf(" increase in time from C to Assembly");
 	}
