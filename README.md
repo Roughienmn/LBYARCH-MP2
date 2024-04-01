@@ -36,14 +36,14 @@ Store the result in vector **_Z_**. Display the result of the first 10 elements 
 #### Debug Mode Results
 | Vector Size | C Execution Time (Average) (ms) | x86-64 Execution Time (Average) (ms) | Time Difference (C - x86-64) |
 | :---------- | :------------------------------ | :----------------------------------- | :-------------- |
-| 2^20        | [insert time]                   |  [insert time]                       | [insert time]   |
-| 2^24        | [insert time]                   |  [insert time]                       | [insert time]   |
-| 2^28        | [insert time]                   |  [insert time]                       | [insert time]   |
+| 2^20        | 1.60ms                   |  1.10ms                       | 0.50ms   |
+| 2^24        | 26.77ms                   |  19.27ms                       | [insert time]   |
+| 2^28        | 456.83ms                   |  317.17ms                       | [insert time]   |
 
 
 #### Release Mode Results
 | Vector Size | C Execution Time (Average) (ms) | x86-64 Execution Time (Average) (ms) | Time Difference (C - x86-64) |
 | :---------- | :------------------------------ | :----------------------------------- | :--------------------------- |
-| 2^20        | 1.27ms                   |  1.57ms                       | -0.30ms   |
+| 2^20        | 1.60ms                   |  1.10ms                       | -0.30ms   |
 | 2^24        | 22.37ms                   |  23.03ms                       | -0.66ms   |
 | 2^28        | 326.03ms                   |  333.67ms                       | -7.64ms  |
