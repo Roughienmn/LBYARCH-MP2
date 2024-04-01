@@ -21,7 +21,7 @@ Performs the DAXPY function (**D**ouble precision **AX** **P**lus **Y**) on the 
 Store the result in vector **_Z_**. Display the result of the first 10 elements of vector Z for all kernel versions (C and x86-64).  
 
 ## Results and Analysis
-#### Correctness of Outputs
+### Correctness of Outputs
 The outputs of both the C and Assembly kernels were checked against each other to measure the accuracy. The error is calculated by subtracting the results of the Assembly kernel from the results of the C kernel, and then dividing that by the summation of both results. The accuracy is calculated by subtracting the error from 1.00 or 100%. The accuracy of every run was then averaged to get the final accuracy. Upon running the program, the accuracy was consistently 100%, indicating that the results were correct.
 
 ### Debug Mode
