@@ -1,3 +1,8 @@
+Comparative execution time of kernels
+Short analysis of performance of kernels
+Screenshots of program output w/ correctness check (C)
+Screenshots of program output w/ correctness check (x86-64)
+
 # x86-to-C Interface Programming Project
 This project was made to compare the performance of two kernel versions, implemented in C and x86-64 Assembly. The performance is measured in terms of execution time, and are executed in both Debug and Release Configurations of Visual Studio 2022.
 ### Group Members:
@@ -9,7 +14,7 @@ The project comprises of 2 kernel versions (C and x86-64), and both are to simul
 
 **Input:**
 - Scalar variable **_n_** (integer) contains the length of the vectors X, Y, and Z
-  - For the analysis, n will have possible values of **2^20, 2^24, 2^28** and **2^30**
+  - For the analysis, n will have possible values of **2^20, 2^24,** and **2^28**
 - Scalar variable **_A_** is a double-precision float value (set to **2.00** for the analysis)
 - Vectors **_X, Y,_** and **_Z_** are double-precision floats of length n
   - For the analysis, **_X and Y_** are initialized with random double-precision float values
@@ -22,21 +27,23 @@ Store the result in vector **_Z_**. Display the result of the first 10 elements 
 
 ## Results and Analysis
 ### Debug Mode
+
 ---------------------
 ### Release Mode
+
 ---------------------
 ### Summary of Results
+#### Debug Mode Results
+| Vector Size | C Execution Time (Average) (ms) | x86-64 Execution Time (Average) (ms) | Time Difference (C - x86-64) |
+| :---------- | :------------------------------ | :----------------------------------- | :-------------- |
+| 2^20        | [insert time]                   |  [insert time]                       | [insert time]   |
+| 2^24        | [insert time]                   |  [insert time]                       | [insert time]   |
+| 2^28        | [insert time]                   |  [insert time]                       | [insert time]   |
+
+
 #### Release Mode Results
 | Vector Size | C Execution Time (Average) (ms) | x86-64 Execution Time (Average) (ms) | Time Difference (C - x86-64) |
 | :---------- | :------------------------------ | :----------------------------------- | :--------------------------- |
 | 2^20        | 1.27ms                   |  1.57ms                       | -0.30ms   |
 | 2^24        | 22.37ms                   |  23.03ms                       | -0.66ms   |
 | 2^28        | 326.03ms                   |  333.67ms                       | -7.64ms  |
-
-
-#### Debug Mode Results
-| Vector Size | C Execution Time (Average) (ms) | x86-64 Execution Time (Average) (ms) | Time Difference (C - x86-64) |
-| :---------- | :------------------------------ | :----------------------------------- | :-------------- |
-| 2^20        | [insert time]                   |  [insert time]                       | [insert time]   |
-| 2^24        | [insert time]                   |  [insert time]                       | [insert time]   |
-| 2^30        | [insert time]                   |  [insert time]                       | [insert time]   |
