@@ -30,6 +30,8 @@ The outputs of both the C and Assembly kernels were checked against each other t
 ### Release Mode
 ![release output](img/release.png)
 ---------------------
+Note: Only the first ten elements of arrays X and Y are displayed for ease of readability.
+---------------------
 ### Summary of Results
 #### Debug Mode Results
 | Vector Size | C Execution Time (Average) (ms) | x86-64 Execution Time (Average) (ms) | Time Difference (C - x86-64) |
