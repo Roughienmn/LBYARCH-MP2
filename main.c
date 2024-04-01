@@ -51,7 +51,7 @@ void printTime(double* T_c, double* T_asm, int j, double acc) {
 	double asmAve = 0;
 	double aveDiff = 0;
 
-	printf("Time (C): %.2f", T_c[0]);
+	printf("Time (C): %.2fms", T_c[0]);
 
 	for (i = 1; i < j; i++) {
 		printf(", %.2fms", T_c[i]);
@@ -59,7 +59,7 @@ void printTime(double* T_c, double* T_asm, int j, double acc) {
 	}
 	cAve /= j;
 	
-	printf("\nTime (Asm): %.2f", T_asm[0]);
+	printf("\nTime (Asm): %.2fms", T_asm[0]);
 	for (i = 1; i < j; i++) {
 		printf(", %.2fms", T_asm[i]);
 		asmAve += T_asm[i];
