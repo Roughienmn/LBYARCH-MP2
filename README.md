@@ -1,8 +1,3 @@
-Comparative execution time of kernels
-Short analysis of performance of kernels
-Screenshots of program output w/ correctness check (C)
-Screenshots of program output w/ correctness check (x86-64)
-
 # x86-to-C Interface Programming Project
 This project was made to compare the performance of two kernel versions, implemented in C and x86-64 Assembly. The performance is measured in terms of execution time, and are executed in both Debug and Release Configurations of Visual Studio 2022.
 ### Group Members:
